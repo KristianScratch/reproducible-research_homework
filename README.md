@@ -14,6 +14,12 @@ c) see edited "question-4-code/randomwalk.R"
 
 d)
 
+![Commit History](/cloud/project/images/commit_hist_q4d.png)
+
+<p align="center">
+<img src="/cloud/project/images/commit_hist_q4d.png" width="500" height="400">
+</p>
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points (plus an optional bonus question worth 10 extra points). First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.

@@ -26,7 +26,7 @@ b) The best transformation for this data, where both of the variables we are int
 
 To see this code, view the answer script at: "/question-5-data/Question5Answer.R" section (3).
 
-c) We can find the Scaling factor (B) and the exponent (a) from a linear model of this ransformed data: lm(Virion_vol_log ~ Genome_l_log, loglog_Cui_data). We can deduce that the a = 1.5152 and B = 1181.807. The paper gave these values as 1182 and 1.52 respectively, so the we have succesfully reproduced the work.
+c) We can find the Scaling factor (B) and the exponent (a) from a linear model of this transformed data: lm(Virion_vol_log ~ Genome_l_log, loglog_Cui_data). We can deduce that the a = 1.5152 and B = 1181.807. The paper gave these values as 1182 and 1.52 respectively, so the we have successfully reproduced the work.
 
 To see this code, view the answer script at: "/question-5-data/Question5Answer.R" section (4).
 
@@ -35,6 +35,10 @@ d) See Image below >
 ![Replicated Figure](https://github.com/KristianScratch/reproducible-research_homework/blob/main/question-5-data/Replicated_Plot.png)
 
 To see this code, view the answer script at: "/question-5-data/Question5Answer.R" section (5).
+
+e) We can use this relationship to estimate that the Volume of a 300kb virion would be = 6697007 nm3.
+
+To see this code, view the answer script at: "/question-5-data/Question5Answer.R" section (6).
 
 ## Instructions
 

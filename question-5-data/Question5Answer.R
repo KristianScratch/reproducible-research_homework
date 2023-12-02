@@ -84,4 +84,18 @@ dsDNA_loglog_graph
 print(dsDNA_loglog_graph)
 dev.off()
 
+#------------------------------------------------------------------------
+# (6) What is the volume of a 300kb dsDNA virion?
+
+# ln(V) = ln(B)  + a * ln(L).      *which is in the format of 
+# y     =   c    + m * x
+
+log_q5e_answr <- log(B) + (a*log(300)) # ln(v) at 300kb is 15.71717
+
+q5e_answr <- exp(log_q5e_answr)
+q5e_answr
+
+# V at 300kb is 6697007nm3
+
+
 

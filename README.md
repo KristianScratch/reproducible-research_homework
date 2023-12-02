@@ -14,14 +14,7 @@ c) see edited "question-4-code/randomwalk.R"
 
 d)
 
-![Commit History](/cloud/project/images/commit_hist_q4d.png)
-
-
 ![Commit History](https://github.com/KristianScratch/reproducible-research_homework/blob/main/images/commit_hist_q4d.png)
-
-<p align="center">
-<img src="(https://github.com/KristianScratch/reproducible-research_homework/blob/main/images/commit_hist_q4d.png" width="500" height="400">
-</p>
 
 ## Instructions
 

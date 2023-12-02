@@ -34,9 +34,9 @@ loglog_Cui_data <- Cui_data %>%
 loglog_Cui_data
 
 #------------------------------------------------------------------------
-# (4) Parameterising a model (B and a), and checking Replicatability.
+# (4) Parameterising a model (B and a), and checking Reproducability.
 
-# the paper we are reproducing proposes the relationship between genome size and viron volume as V = B*L ^a
+# the paper we are reproducing proposes the relationship between genome size and virion volume as V = B*L ^a
 # AkA Volume = Scaling factor * Genome Length ^exponent
 
 # By log-log transforming, we have made a linear relationship of this which can be defined as:
@@ -57,10 +57,10 @@ B <- exp(7.0748) # AKA the scaling factor is 1181.807
 a <- 1.5152 
 # p = 6.44e-10 so this is significant 
 
-# The paper gave these values as 1182 and 1.52 respectively, so the work is replicatable.
+# The paper gave these values as 1182 and 1.52 respectively, so the work is reproducible.
 
 #------------------------------------------------------------------------
-# (5) Replicating the Figure
+# (5) Reproducing the Figure
 
 #Plot the transformed data and apply a linear model smoother
 dsDNA_loglog_graph <- ggplot(data= loglog_Cui_data,

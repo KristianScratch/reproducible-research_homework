@@ -8,17 +8,17 @@
 
 a) We observe that the function creates a dataframe of 2D coordinates (X and Y) and and finds these for each time that we can specify the number of time steps (we used 500 for both plots). The starting position is set at [0,0] but each time step takes a 'leap' of a defined distance ('h', which we set at a constant 0.25) at a random angle. This simulates a random 2D walk. The plots show this 'random walk' with time shown as colour from black to blue. We can see that the two data sets are extremely different, plot1 going largely west from start, and plot2 going south and ending east of start. They simulate brownian motion, but the plots I described are not reproducible because every time you create the dataframe (i.e. on a different computer) the outcome is different
 
-b) A random seed is the starting value for a Psuedo-random generator to produce its output. PRNG's use a conserved method to generate the random outputs. This means that the starting point for the algorithm to make a random number is important, this starting point is the random seed. If we put the same random seed in twice, we should thus get the same output from the generator. Setting seeds means that code using this kind of RNG can be replicatable and aid reproduciblility.
+b) A random seed is the starting value for a Psuedo-random generator to produce its output. PRNG's use a conserved method to generate the random outputs. This means that the starting point for the algorithm to make a random number is important, this starting point is the random seed. If we put the same random seed in twice, we should thus get the same output from the generator. Setting seeds means that code using this kind of RNG has reproduciblility.
 
 c) see edited "question-4-code/randomwalk.R"
 
-d) This poto does not show all the history as I worked for a while before commiting/ See image below >
+d) This photo does not show all the history as I worked for a while before committing. See image below >
 
 ![Commit History](https://github.com/KristianScratch/reproducible-research_homework/blob/main/images/commit_hist_q4d.png)
 
 ## Q5
 
-a) the dsDAN virus table in the Cui et al data has 33 rows and 13 columns. 
+a) the dsDNA virus table in the Cui et al data has 33 rows and 13 columns. 
 
 To see this code, view the answer script at: "/question-5-data/Question5Answer.R" section (2).
 
@@ -32,13 +32,19 @@ To see this code, view the answer script at: "/question-5-data/Question5Answer.R
 
 d) See Image below >
 
-![Replicated Figure](https://github.com/KristianScratch/reproducible-research_homework/blob/main/question-5-data/Replicated_Plot.png)
+![Reproduced Figure](https://github.com/KristianScratch/reproducible-research_homework/blob/main/question-5-data/Replicated_Plot.png)
 
 To see this code, view the answer script at: "/question-5-data/Question5Answer.R" section (5).
 
 e) We can use this relationship to estimate that the Volume of a 300kb virion would be = 6697007 nm3.
 
 To see this code, view the answer script at: "/question-5-data/Question5Answer.R" section (6).
+
+BONUS) Reproducibility is when a researchers results can be found by different researchers using the same data and methods (as we have done here). It is good at finding errors, biases or even corrupt reproting. Replciatability is when a researchers conclusion from their results can be met via other research using different methods and on different data, but corroborates findings. It is good to show how broad or niche a phenomenon is, and can uncover deeper flaws in the data or experimental design of the study. 
+
+Github can firstly aid the reproduciblity and replectibility of research by helping the dispersal of open access data, methods and analysis. This is the first step as it means other research can try to replicate or reproduce it. Not to mention the cloud storage of all this research also aids reproducibility and replicability in posterity. In a more indirect way, open access like Github may promote more reproducibile and replicable work simply because administrators, peers and collaborators can check, propose alterations, and instill a greater sense of the importance of these values duue to the presence of prying eyes. Additional features also contribute; issues can be used for review and feedback. Github forking allows people to use data for their own approaches, which is very conducive toward replicability in particular as a different group may choose to take a certain part of the code or a certain time point in its development. The git version control allowing people to see the entire process is particularrly important as early, small coices can often be left out of traditional peer review but are very important - such as exploratory figures. Version control means that even these discarded parts of the process can be included in our scrutiny of research.
+
+However Github is not generally considered a long term repository for data and research as it does not use DOIs, allows deletion and privatization of materials, and is a for profit company so does not make any guarantees on long term data storage. Another, more societal, drawback is that often researchers do not have the skills or time to learn complex version control software. It also may not apply to all cases, in particular Git and Github is very poorly suited to Ai research where the files are not just numbers or text but audio, images, and video, which are far bigger making it poorly suited.
 
 ## Instructions
 

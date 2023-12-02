@@ -32,7 +32,7 @@ To see this code, view the answer script at: "/question-5-data/Question5Answer.R
 
 d) See Image below >
 
-![Commit History](https://github.com/KristianScratch/reproducible-research_homework/blob/main/images/commit_hist_q4d.png)
+![Replicated Figure](https://github.com/KristianScratch/reproducible-research_homework/blob/main/question-5-data/Replicated_Plot.png)
 
 To see this code, view the answer script at: "/question-5-data/Question5Answer.R" section (5).
 

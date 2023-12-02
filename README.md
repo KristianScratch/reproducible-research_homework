@@ -20,6 +20,18 @@ d) See image below >
 
 a) the dsDAN virus table in the Cui et al data has 33 rows and 13 columns. 
 
+To see this code, view the answer script at: "/question-5-data/Question5Answer.R" section (2).
+
+b) The best transformation for this data, where both of the variables we are interested in are exponential in nature, is a log log transformation (where both x and y axis are log transformed). 
+
+To see this code, view the answer script at: "/question-5-data/Question5Answer.R" section (3).
+
+c) We can find the Scaling factor (B) and the exponent (a) from a linear model of this ransformed data: lm(Virion_vol_log ~ Genome_l_log, loglog_Cui_data). We can deduce that the a = 1.5152 and B = 1181.807. The paper gave these values as 1182 and 1.52 respectively, so the we have succesfully reproduced the work.
+
+To see this code, view the answer script at: "/question-5-data/Question5Answer.R" section (4).
+
+d) 
+
 ## Instructions
 
 The homework for this Computer skills practical is divided into 5 questions for a total of 100 points (plus an optional bonus question worth 10 extra points). First, fork this repo and make sure your fork is made **Public** for marking. Answers should be added to the # INSERT ANSWERS HERE # section above in the **README.md** file of your forked repository.

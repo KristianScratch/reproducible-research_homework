@@ -2,9 +2,9 @@
 
 \# INSERT ANSWERS HERE #
 
-Q1, 2 and 3: https://github.com/KristianScratch/logistic_growth
+##Q1, 2 and 3: https://github.com/KristianScratch/logistic_growth
 
-Q4
+##Q4
 
 a) We observe that the function creates a dataframe of 2D coordinates (X and Y) and and finds these for each time that we can specify the number of time steps (we used 500 for both plots). The starting position is set at [0,0] but each time step takes a 'leap' of a defined distance ('h', which we set at a constant 0.25) at a random angle. This simulates a random 2D walk. The plots show this 'random walk' with time shown as colour from black to blue. We can see that the two data sets are extremely different, plot1 going largely west from start, and plot2 going south and ending east of start. They simulate brownian motion, but the plots I described are not reproducible because every time you create the dataframe (i.e. on a different computer) the outcome is different
 
@@ -12,9 +12,11 @@ b) A random seed is the starting value for a Psuedo-random generator to produce 
 
 c) see edited "question-4-code/randomwalk.R"
 
-d)
+d) See image below >
 
 ![Commit History](https://github.com/KristianScratch/reproducible-research_homework/blob/main/images/commit_hist_q4d.png)
+
+##Q5
 
 ## Instructions
 

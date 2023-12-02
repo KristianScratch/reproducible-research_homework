@@ -67,7 +67,8 @@ dsDNA_loglog_graph <- ggplot(data= loglog_Cui_data,
        aes(x= Genome_l_log, y=Virion_vol_log))+
   geom_point() +
   geom_smooth(method = "lm") +
-  labs(x= "log[Genome length (kb)]", y= "log[Virion Volume (nm3)]")
+  labs(x= "log[Genome length (kb)]", y= "log[Virion Volume (nm3)]") +
+  theme_bw()
 
 #View it
 dsDNA_loglog_graph

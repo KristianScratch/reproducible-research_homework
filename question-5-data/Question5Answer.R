@@ -11,6 +11,8 @@ install.packages("ggplot2")
 library(ggplot2)
 install.packages("dplyr")
 library(dplyr)
+install.packages("ragg")
+library(ragg)
 
 #------------------------------------------------------------------------
 # (2) Read the data and view it 
@@ -32,7 +34,7 @@ loglog_Cui_data <- Cui_data %>%
 loglog_Cui_data
 
 #------------------------------------------------------------------------
-# (4) Parameterising a model (B and a), and checking Reproducibility.
+# (4) Parameterising a model (B and a), and checking Replicatability.
 
 # the paper we are reproducing proposes the relationship between genome size and viron volume as V = B*L ^a
 # AkA Volume = Scaling factor * Genome Length ^exponent
@@ -42,10 +44,10 @@ loglog_Cui_data
 # y     =   c    + m * x
 
 #In this format we can run a linear model
-model1 <- lm(Virion_vol_log ~ Genome_l_log, loglog_Cui_data)
+dsDNA_loglog_model <- lm(Virion_vol_log ~ Genome_l_log, loglog_Cui_data)
 
 #and view the results
-summary(model1)
+summary(dsDNA_loglog_model)
 
 # the intercept is equivalent to log(ScalingFactor). So, B = e^7.0748
 B <- exp(7.0748) # AKA the scaling factor is 1181.807
@@ -55,5 +57,30 @@ B <- exp(7.0748) # AKA the scaling factor is 1181.807
 a <- 1.5152 
 # p = 6.44e-10 so this is significant 
 
-# The paper gave these values as 1182 and 1.52 respectively, so the work is reproducible.
+# The paper gave these values as 1182 and 1.52 respectively, so the work is replicatable.
+
+#------------------------------------------------------------------------
+# (5) Replicating the Figure
+
+#Plot the transformed data and apply a linear model smoother
+dsDNA_loglog_graph <- ggplot(data= loglog_Cui_data,
+       aes(x= Genome_l_log, y=Virion_vol_log))+
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(x= "log[Genome length (kb)]", y= "log[Virion Volume (nm3)]")
+
+#View it
+dsDNA_loglog_graph
+
+#save it
+agg_png("question-5-data/Replicated_Plot.png", 
+        width   =  35, 
+        height  =  30, 
+        units   =  "cm", 
+        res     =  175, 
+        scaling =  2.5)
+dsDNA_loglog_graph
+print(dsDNA_loglog_graph)
+dev.off()
+
 

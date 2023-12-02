@@ -4,7 +4,15 @@
 
 Q1, 2 and 3: https://github.com/KristianScratch/logistic_growth
 
+Q4
 
+a) We observe that the function creates a dataframe of 2D coordinates (X and Y) and and finds these for each time that we can specify the number of time steps (we used 500 for both plots). The starting position is set at [0,0] but each time step takes a 'leap' of a defined distance ('h', which we set at a constant 0.25) at a random angle. This simulates a random 2D walk. The plots show this 'random walk' with time shown as colour from black to blue. We can see that the two data sets are extremely different, plot1 going largely west from start, and plot2 going south and ending east of start. They simulate brownian motion, but the plots I described are not reproducible because every time you create the dataframe (i.e. on a different computer) the outcome is different
+
+b) A random seed is the starting value for a Psuedo-random generator to produce its output. PRNG's use a conserved method to generate the random outputs. This means that the starting point for the algorithm to make a random number is important, this starting point is the random seed. If we put the same random seed in twice, we should thus get the same output from the generator. Setting seeds means that code using this kind of RNG can be reproducible.
+
+c) see edited "question-4-code/randomwalk.R"
+
+d)
 
 ## Instructions
 

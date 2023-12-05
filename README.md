@@ -2,7 +2,7 @@
 
 \# INSERT ANSWERS HERE #
 
-## Q1, 2 and 3: https://github.com/KristianScratch/logistic_growth
+## Q1, 2 and 3: https://github.com/userSGK4/logistic_growth
 
 ## Q4
 
